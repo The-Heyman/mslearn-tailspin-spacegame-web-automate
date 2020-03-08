@@ -1,9 +1,8 @@
-terraform {
-  required_version = "> 0.12.0"
-
-  backend "azurerm" {
-  }
+provider "azurerm" {
+  version = "=2.0.0"
+  features {}
 }
+
 
 variable "resource_group_name" {
   default = "tailspin-space-game-rg"
